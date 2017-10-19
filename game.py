@@ -194,6 +194,12 @@ def menu(exits):
         print_menu(exits)
         a = raw_input("Enter an exit: ")
         b = normalise_input(a)
+        if is_valid_exit(exits,b) == True:
+            print(exits.get(b))
+        else:
+            print_menu(exits)
+    print_menu(b)
+
 
         #if exits.has_key(b) == True:
             #return True
