@@ -198,7 +198,6 @@ def menu(exits):
             print(exits.get(b))
         else:
             print_menu(exits)
-    print_menu(b)
 
 
         #if exits.has_key(b) == True:
